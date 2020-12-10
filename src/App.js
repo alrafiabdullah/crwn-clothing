@@ -24,7 +24,7 @@ class App extends Component {
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
 
-        //error Cannot read property 'onSnapshot' of undefined on line 10
+        console.log(userAuth);
 
         userRef.onSnapshot((snapShot) => {
           this.setState({
